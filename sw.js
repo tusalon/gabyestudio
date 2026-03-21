@@ -1,22 +1,22 @@
-// sw.js - Service Worker para GordisNailsbySandra
+// sw.js - Service Worker para gaby.estudio
 
-const CACHE_NAME = 'gordis-nails-v1';
+const CACHE_NAME = 'gaby-estudio-v1';
 const urlsToCache = [
-  '/gordis-nails/',
-  '/gordis-nails/index.html',
-  '/gordis-nails/admin.html',
-  '/gordis-nails/admin-login.html',
-  '/gordis-nails/setup-wizard.html',
-  '/gordis-nails/editar-negocio.html',
-  '/gordis-nails/manifest.json',
-  '/gordis-nails/icons/icon-72x72.png',
-  '/gordis-nails/icons/icon-96x96.png',
-  '/gordis-nails/icons/icon-128x128.png',
-  '/gordis-nails/icons/icon-144x144.png',
-  '/gordis-nails/icons/icon-152x152.png',
-  '/gordis-nails/icons/icon-192x192.png',
-  '/gordis-nails/icons/icon-384x384.png',
-  '/gordis-nails/icons/icon-512x512.png'
+  '/gabyestudio/',
+  '/gabyestudio/index.html',
+  '/gabyestudio/admin.html',
+  '/gabyestudio/admin-login.html',
+  '/gabyestudio/setup-wizard.html',
+  '/gabyestudio/editar-negocio.html',
+  '/gabyestudio/manifest.json',
+  '/gabyestudio/icons/icon-72x72.png',
+  '/gabyestudio/icons/icon-96x96.png',
+  '/gabyestudio/icons/icon-128x128.png',
+  '/gabyestudio/icons/icon-144x144.png',
+  '/gabyestudio/icons/icon-152x152.png',
+  '/gabyestudio/icons/icon-192x192.png',
+  '/gabyestudio/icons/icon-384x384.png',
+  '/gabyestudio/icons/icon-512x512.png'
 ];
 
 // ============================================
@@ -108,7 +108,7 @@ self.addEventListener('fetch', event => {
           }
           // Si no hay cache y es imagen, devolver icon por defecto
           if (event.request.url.match(/\.(jpg|jpeg|png|gif|svg|webp)$/)) {
-            return caches.match('/gordis-nails/icons/icon-192x192.png');
+            return caches.match('/gabyestudio/icons/icon-192x192.png');
           }
           return new Response('Error de red', { status: 408 });
         });
@@ -138,6 +138,6 @@ self.addEventListener('message', event => {
   }
 });
 
-console.log('✅ Service Worker configurado para GordisNailsbySandra');
+console.log('✅ Service Worker configurado para gaby.estudio');
 console.log('📦 Cache:', CACHE_NAME);
 console.log('📄 Archivos a cachear:', urlsToCache.length);
