@@ -1,6 +1,6 @@
 // sw.js - Service Worker para gaby.estudio
 
-const CACHE_NAME = 'gabyestudio-v29';
+const CACHE_NAME = 'gabyestudio-v25';
 const urlsToCache = [
   '/gabyestudio/',
   '/gabyestudio/index.html',
