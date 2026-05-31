@@ -1,7 +1,7 @@
 {
-  "name": "exoticnailsbyyuli",
+  "name": "gabyestudio",
   "version": "1.0.0",
-  "description": "APK Android para Exotic Nails by Yuly",
+  "description": "APK Android para gaby.estudio",
   "main": "admin-app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -15,16 +15,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tusalon/exoticnailsbyyuly.git"
+    "url": "https://github.com/tusalon/gabyestudio.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "bugs": {
-    "url": "https://github.com/tusalon/exoticnailsbyyuly/issues"
+    "url": "https://github.com/tusalon/gabyestudio/issues"
   },
-  "homepage": "https://github.com/tusalon/exoticnailsbyyuly#readme",
+  "homepage": "https://github.com/tusalon/gabyestudio#readme",
   "devDependencies": {
     "@babel/standalone": "^7.29.7",
     "@capacitor/android": "^8.3.4",
