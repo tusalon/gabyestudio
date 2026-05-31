@@ -1,6 +1,6 @@
 // sw.js - Service Worker para gaby.estudio
 
-const CACHE_NAME = 'gabyestudio-v29';
+const CACHE_NAME = 'gabyestudio-v47';
 const urlsToCache = [
   '/gabyestudio/',
   '/gabyestudio/index.html',
@@ -17,7 +17,14 @@ const urlsToCache = [
   '/gabyestudio/icons/icon-152x152.png',
   '/gabyestudio/icons/icon-192x192.png',
   '/gabyestudio/icons/icon-384x384.png',
-  '/gabyestudio/icons/icon-512x512.png'
+  '/gabyestudio/icons/icon-512x512.png',
+  '/gabyestudio/vendor/react.production.min.js',
+  '/gabyestudio/vendor/react-dom.production.min.js',
+  '/gabyestudio/vendor/babel.min.js',
+  '/gabyestudio/vendor/bcrypt.min.js',
+  '/gabyestudio/vendor/tailwind-browser.js',
+  '/gabyestudio/vendor/lucide/lucide.css',
+  '/gabyestudio/vendor/lucide/lucide.woff2'
 ];
 
 // ============================================
